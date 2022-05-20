@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main
+  className="relative mx-auto sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] "
+/>
+`;
