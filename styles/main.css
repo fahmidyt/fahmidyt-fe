@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 768px) {
+  .navbar {
+    overflow: hidden;
+    max-height: 350px;
+    -webkit-transition: max-height 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: max-height 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: max-height 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: max-height 0.75s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  }
+
+  .navbar.colapsed {
+    max-height: 0px;
+    -webkit-transition: max-height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition: max-height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: max-height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: max-height 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
