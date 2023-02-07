@@ -1,0 +1,52 @@
+{
+  "name": "fahmidyt-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"next dev --turbo\" \"tailwindcss -i styles/main.css -o styles/dist.css -w\"",
+    "build": "tailwindcss -m -i styles/main.css -o styles/dist.css && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fahmidyt/fahmidyt-fe.git"
+  },
+  "keywords": [
+    "Personal",
+    "Website",
+    "NextJS",
+    "React"
+  ],
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "author": "fahmidyt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fahmidyt/fahmidyt-fe/issues"
+  },
+  "homepage": "https://github.com/fahmidyt/fahmidyt-fe#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "cypress": "11.2.0",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/node": "18.11.10",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "next": "13.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.3"
+  }
+}
