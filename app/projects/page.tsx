@@ -104,35 +104,7 @@ export default function Page() {
           Here&#39;s some works that i&#39;ve been working on.
         </h1>
 
-        {ListProjects.map((project) => (
-          <div key={project.title} className="my-12">
-            <h4 className="font-bold my-2 text-lg text-emerald-400">
-              {project.title}
-            </h4>
-            <Image
-              src={project.cover.path}
-              alt={project.title}
-              width={project.cover.width}
-              height={project.cover.height}
-            />
-            <p className="font-light my-4 text-justify text-gray-800">
-              {project.description}
-            </p>
-            <p className="font-light text-justify text-gray-800">
-              {project.jobdesc}
-            </p>
-
-            <h6 className="mt-4 text-gray-800 font-semibold">
-              This is the tech stack when develop this app:
-            </h6>
-            <ul className="list-disc pl-5 text-gray-800 font-light">
-              {project.techStack.map((stack) => (
-                <li key={stack}>{stack}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-        <p className="text-sm text-gray-800">Also.. many other project are not listed in here.. you can contact me for more details! cheers</p>
+        <p>Under construction. Please comeback later :D</p>
       </div>
     </Container>
   );
